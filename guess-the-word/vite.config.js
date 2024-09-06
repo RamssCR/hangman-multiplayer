@@ -9,11 +9,6 @@ export default defineConfig({
       '/socket.io': {
         target: 'http://localhost:2000',
         ws: true
-      },
-      '/getRandom': {
-        target: 'http://locahost:2000',
-        changeOrigin: true,
-        secure: false
       }
     }
   }
