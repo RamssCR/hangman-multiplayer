@@ -1,0 +1,25 @@
+.keyboard{
+    width: fit-content;
+    margin: 6em auto 0 auto;
+    display: grid;
+    column-gap: 1em;
+    row-gap: 1em;
+    grid-template-columns: repeat(7, 5.6em);
+    border: 3px solid #eeeeeebb;
+    padding: 1em;
+}
+
+.keyboard .btn-char{
+    background-color: transparent;
+    border: 2px solid #eeeeeecc;
+    font-size: 2em;
+    height: 3em;
+    color: #eeeeee;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.keyboard .btn-char:hover{
+    background-color: #eeeeee44;
+    cursor: pointer;
+}

@@ -1,0 +1,86 @@
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #00000055;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+    animation: changeOpacity .3s linear;
+}
+
+@keyframes changeOpacity {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.modal .dialog{
+    width: 35em;
+    background: linear-gradient(#9f07a1, #69066b);
+    padding: 1em 1.5em;
+    border: 3px solid #eeeeee;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    align-items: center;
+    justify-content: center;
+    animation: popup .6s linear;
+}
+
+.modal .dialog .error-title{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #fcd042;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dddddd;
+}
+
+.modal .dialog .error-description{
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.modal .dialog .btn-close{
+    width: 15em;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #eeeeee;
+    background: linear-gradient(#ebbd23, #e49e10);
+    text-transform: uppercase;
+    padding: 0.8em 0;
+    border-radius: 0.7em;
+    border: none;
+    transition: .3s;
+    position: relative;
+}
+
+@keyframes popup {
+    0%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(0);
+    }
+
+    80%{
+        transform: scale(1.05);
+    }
+
+    95%{
+        transform: scale(1);
+    }
+}
+
+.modal .dialog .btn-close:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+.main-menu-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.main-menu-container .game-title{
+    text-transform: uppercase;
+    color: #fcd042;
+    font-size: 4.5em;
+    transform: rotateZ(-2deg);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #dddddd;
+}
+
+.main-menu-container form{
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.main-menu-container form .controller-group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 20em;
+    align-items: center;
+}
+
+.main-menu-container form .controller-group .username-main-menu{
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.main-menu-container form .controller-group .username-input{
+    width: 100%;
+    padding: 0.5em 0.8em;
+    font-size: 1.2em;
+    border: none;
+    border-bottom: 2px solid #eeeeee;
+    background-color: transparent;
+    outline: none;
+    color: #eeeeee;
+    font-weight: 600;
+    text-align: center;
+}
+
+.main-menu-container form .btn-start{
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #eeeeee;
+    background: linear-gradient(#ebbd23, #e49e10);
+    text-transform: uppercase;
+    padding: 0.8em 0;
+    border-radius: 0.7em;
+    border: none;
+    transition: .3s;
+    position: relative;
+}
+
+.main-menu-container form .btn-start .loader{
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border: 4px solid #eeeeee;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    top: 0.5em;
+    right: 3em;
+    animation: spinning 1s infinite linear;
+}
+
+@keyframes spinning {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+.main-menu-container form .btn-start:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}

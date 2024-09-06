@@ -1,0 +1,26 @@
+.letters-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.letters-container .letter-container{
+    background-color: #00000066;
+    width: 5em;
+    height: 7em;
+}
+
+.letters-container .letter-container .letter{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(#f1c343, #ac8419);
+    border: 3px solid #eeeeee;
+    font-size: 3em;
+    font-weight: 800;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
