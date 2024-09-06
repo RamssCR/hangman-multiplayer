@@ -12,12 +12,12 @@ function Game() {
 
     useEffect(() => {
         if (players.length === 0) navigateTo('/')
-    }, [])
+    }, [navigateTo, players.length])
 
     return (
         <main className='game-container'>
             <div className='playing-users'>
-                {players.map((player, index) => <PlayersCard key={index} username={player.username} lives={player.lives} />)}
+                {players.length !== 0 && players.map((player, index) => <PlayersCard key={index} username={player.username} lives={player.lives} />)}
             </div>
             <WordToGuess />
             <Keyboard />
