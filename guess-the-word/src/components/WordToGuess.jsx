@@ -4,6 +4,8 @@ import '../styles/wordToGuess.css'
 
 function WordToGuess() {
     const {word} = useContext(gameContext)
+
+    if (!word.gameWord) return
     const {gameWord} = word
 
     return (
